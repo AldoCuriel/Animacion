@@ -22,7 +22,7 @@ function varargout = animacion(varargin)
 
 % Edit the above text to modify the response to help animacion
 
-% Last Modified by GUIDE v2.5 26-Jul-2015 22:51:29
+% Last Modified by GUIDE v2.5 02-Aug-2015 02:00:03
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -70,17 +70,39 @@ function varargout = animacion_OutputFcn(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 % Get default command line output from handles structure
-archivos
 varargout{1} = handles.output;
 
 
-% --- Executes on button press in pushbutton1.
-function pushbutton1_Callback(hObject, eventdata, handles)
-% hObject    handle to pushbutton1 (see GCBO)
+% --- Executes on button press in push_bmp.
+function push_bmp_Callback(hObject, eventdata, handles)
+% hObject    handle to push_bmp (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 % [FileName,PathName] = uigetfile('*.m','Select the MATLAB code file');
 % PathName
 % FileName
-dname = uigetdir('C:\')
+global adress;
+dname = uigetdir('C:\');
+adress = dname;
+archivos
 
+
+% --- Executes on button press in push_archivos.
+function push_archivos_Callback(hObject, eventdata, handles)
+% hObject    handle to push_archivos (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes on button press in play.
+function play_Callback(hObject, eventdata, handles)
+% hObject    handle to play (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes on button press in instrucciones.
+function instrucciones_Callback(hObject, eventdata, handles)
+% hObject    handle to instrucciones (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
