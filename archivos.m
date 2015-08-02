@@ -2,7 +2,7 @@ global d;
 global g;
 global h;
 global adress;
-adress= 'imagenes';
+%adress= 'imagenes';
 ext= '/*.bmp';
 file = strcat(adress,ext);
 d = dir(file);
