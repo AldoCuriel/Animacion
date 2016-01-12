@@ -1,3 +1,4 @@
+
 global d;
 global g;
 global h;
@@ -9,12 +10,14 @@ d = dir(file);
 [g,h] = size(d);
 RowNum = ceil(g / 4);
 ImgNum = 1;
+figure
 for i=1:RowNum
     for j = 1:4
-        subplot(RowNum,4,j)
+       
+        subplot(RowNum,4,ImgNum)
         filename = strcat(adress,'/',d(ImgNum,1).name);
         x = imread(filename);
-        imshow(x)
+        imshow(x);
         if ImgNum == g
             break
         end
