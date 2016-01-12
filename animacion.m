@@ -54,7 +54,9 @@ function animacion_OpeningFcn(hObject, eventdata, handles, varargin)
 
 % Choose default command line output for animacion
 handles.output = hObject;
-
+y = imread('imagenes/1.jpg');
+axes(handles.axes2)
+imshow(y);
 % Update handles structure
 guidata(hObject, handles);
 
@@ -82,9 +84,9 @@ function push_bmp_Callback(hObject, eventdata, handles)
 % PathName
 % FileName
 global adress;
-dname = uigetdir('C:\');
+dname = uigetdir('\C:');
 adress = dname;
-archivos
+archivos_lista
 
 
 % --- Executes on button press in push_archivos.
@@ -92,6 +94,10 @@ function push_archivos_Callback(hObject, eventdata, handles)
 % hObject    handle to push_archivos (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+global adress2;
+dname = uigetdir('\C:');
+adress2 = dname;
+archivos_destino
 
 
 % --- Executes on button press in play.
@@ -99,6 +105,9 @@ function play_Callback(hObject, eventdata, handles)
 % hObject    handle to play (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+% y = imread('C:\Users\ALDO\Desktop\IBERO\Bernard\Animacion\animacion\bitmap\bitmap/33.bmp');
+axes(handles.axes2)
+archivos_play
 
 
 % --- Executes on button press in instrucciones.
